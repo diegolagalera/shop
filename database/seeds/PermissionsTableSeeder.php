@@ -70,27 +70,27 @@ class PermissionsTableSeeder extends Seeder
          //producto
         Permission::create([
             'name' => 'mostrar llista productes',
-            'slug' => 'product.index',
+            'slug' => 'products.index',
             'description' => 'mostrar llista productes',
         ]);
         Permission::create([
             'name' => 'mostrar productes',
-            'slug' => 'product.show',
+            'slug' => 'products.show',
             'description' => 'mostrar productes',
         ]);
         Permission::create([
             'name' => 'crear productes',
-            'slug' => 'product.create',
+            'slug' => 'products.create',
             'description' => 'crear productes',
         ]);
         Permission::create([
             'name' => 'editar productes',
-            'slug' => 'product.edit',
+            'slug' => 'products.edit',
             'description' => 'editar productes',
         ]);
         Permission::create([
             'name' => 'eliminar productes',
-            'slug' => 'product.destroy',
+            'slug' => 'products.destroy',
             'description' => 'eliminar productes',
         ]);
 

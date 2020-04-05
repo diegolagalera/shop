@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\product;
-class ProductController extends Controller
+
+class RoleController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,10 +13,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $index = product::Paginate(10);
-        return view('products.index',['products' => $index]);
-//        $index = product::all();
-//        dd($index);
+        //
     }
 
     /**
@@ -26,23 +23,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-//        $product = new product;
-//        $product->title='jacketa';
-//        $product->description = 'asd';
-//        $product->save();
-        product::create([
-            'title' => 'asd',
-            'description' => 'asdasd',
-            'price' => 34,
-            'discount' => '12',
-            'id_type' => 1,
-            'size' => 'L',
-            'color' => 'red',
-            'model' => 'asd',
-            'calification' => 3,
-            'quantity' => 45,
-        ]);
-        return 'datos';
+        //
     }
 
     /**
@@ -75,11 +56,7 @@ class ProductController extends Controller
      */
     public function edit($id)
     {
-//        $edit = product::findOrFail($id);
-        $edit = product::where('id',$id)->firstOrFail();
-        $edit->title = 'aaaaa';
-        $edit->save();
-        return 'ok';
+        //
     }
 
     /**
